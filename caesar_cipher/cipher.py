@@ -43,3 +43,5 @@ def crack(cipher):
         candidate = decrypt(cipher, shift)
         if check_confidence(candidate):
             return candidate
+        shift += 1
+    return ""
