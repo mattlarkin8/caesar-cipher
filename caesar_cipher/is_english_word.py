@@ -8,10 +8,8 @@ def count_words(text):
     for candidate in candidate_words:
         word = re.sub(r'[^A-Za-z]+','', candidate)
         if word.lower() in word_list or word in name_list:
-            print("english word", word)
             word_count += 1
         else:
-            print('not english word or name', word)
             pass
 
     return word_count
